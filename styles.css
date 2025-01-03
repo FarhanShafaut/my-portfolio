@@ -1,33 +1,90 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5;          /* Light text for contrast */
 }
 
+/* Header Styles */
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+header .navbar-brand {
+    color: #f5f5f5;
+}
+
+header .navbar-nav .nav-link {
+    color: #b0b0b0; /* Slightly muted text for links */
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Brighten on hover */
+}
+
+/* Section Styles */
 section {
     padding: 20px 0;
+    border-bottom: 1px solid #333; /* Subtle section dividers */
 }
 
 h2 {
     margin-bottom: 20px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff; /* White for headings */
 }
 
+/* Project Cards */
 .card {
-    margin-bottom: 20px;
+    background-color: #1e1e1e; /* Card background matches header */
+    color: #f5f5f5; /* Text remains light */
+    border: none;
 }
 
+.card .btn {
+    background-color: #333; /* Dark button */
+    color: #f5f5f5;
+    border: 1px solid #444; /* Subtle border */
+}
+
+.card .btn:hover {
+    background-color: #555; /* Lighten on hover */
+}
+
+/* Footer */
 footer {
-    background-color: #f8f9fa;
-    color: #666;
+    background-color: #1e1e1e; /* Footer matches header */
+    color: #b0b0b0;
+    padding: 20px 0;
 }
 
+/* Contact Form */
+#contact-form .form-control {
+    background-color: #1e1e1e; /* Input fields match the dark theme */
+    color: #f5f5f5;
+    border: 1px solid #333;
+}
+
+#contact-form .form-control::placeholder {
+    color: #888; /* Subtle placeholder color */
+}
+
+#contact-form .btn {
+    background-color: #333; /* Dark button */
+    color: #f5f5f5;
+    border: 1px solid #444;
+}
+
+#contact-form .btn:hover {
+    background-color: #555; /* Lighten on hover */
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     h2 {
         font-size: 1.5rem;
